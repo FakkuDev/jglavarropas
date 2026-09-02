@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://jglavarropas.vercel.app/sitemaps.xml
