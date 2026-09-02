@@ -527,8 +527,14 @@
       background: var(--bg-card);
       border: 2px solid var(--border);
       border-radius: 6px;
-      padding: 32px 20px;
+      padding: 28px 18px;
       text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 180px;
+      gap: 14px;
       transition: border-color 0.3s, transform 0.3s;
     }
 
@@ -540,15 +546,18 @@
     .galeria-item svg {
       width: 64px;
       height: 64px;
-      margin: 0 auto 14px;
       color: var(--accent);
+      flex-shrink: 0;
     }
 
     .galeria-item span {
       font-family: 'Bebas Neue', sans-serif;
       font-size: 1.1rem;
       letter-spacing: 0.04em;
+      line-height: 1.1;
       color: var(--text);
+      display: block;
+      max-width: 220px;
     }
 
     /* ===== CTA INTERMEDIO ===== */
