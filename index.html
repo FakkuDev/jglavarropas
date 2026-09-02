@@ -1,0 +1,1193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>JGLAVARROPAS | Reparación de Lavarropas y Heladeras en Rivadavia, Junín y San Martín</title>
+  <meta name="description" content="Reparamos tu lavarropas y heladera hoy mismo. Servicio técnico a domicilio en Rivadavia, Junín y San Martín, Mendoza. Horario de 18 a 23 hs. ¡Consultanos!">
+  <link rel="canonical" href="https://jglavarropas.vercel.app/">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="JGLAVARROPAS | Reparación de Lavarropas y Heladeras en Mendoza">
+  <meta property="og:description" content="Servicio técnico a domicilio. Reparamos tu lavarropas y heladera hoy mismo en Rivadavia, Junín y San Martín.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jglavarropas.vercel.app/">
+  <meta property="og:image" content="https://jglavarropas.vercel.app/og-image.jpg">
+  <meta property="og:locale" content="es_AR">
+  
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="JGLAVARROPAS | Reparación de Lavarropas y Heladeras en Mendoza">
+  <meta name="twitter:description" content="Servicio técnico a domicilio. Reparamos tu lavarropas y heladera hoy mismo en Rivadavia, Junín y San Martín.">
+  <meta name="twitter:image" content="https://jglavarropas.vercel.app/og-image.jpg">
+  
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "JGLAVARROPAS",
+    "description": "Servicio técnico de reparación de lavarropas y heladeras a domicilio en Rivadavia, Junín y San Martín, Mendoza.",
+    "image": "https://jglavarropas.vercel.app/og-image.jpg",
+    "telephone": "+542634761946",
+    "url": "https://jglavarropas.vercel.app/",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Rivadavia",
+      "addressRegion": "Mendoza",
+      "addressCountry": "AR"
+    },
+    "areaServed": [
+      {"@type": "City", "name": "Rivadavia"},
+      {"@type": "City", "name": "Junín"},
+      {"@type": "City", "name": "San Martín"}
+    ],
+    "openingHours": "Mo-Su 18:00-23:00",
+    "priceRange": "$$",
+    "serviceType": ["Reparación de lavarropas", "Reparación de heladeras"]
+  }
+  </script>
+  
+  <!-- Fonts -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/bebas-neue@5.0.0/index.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/ibm-plex-sans@5.0.0/400.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/ibm-plex-sans@5.0.0/600.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource/ibm-plex-sans@5.0.0/700.css">
+
+  <style>
+    *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+
+    :root {
+      --bg: #f4f1eb;
+      --bg-dark: #1a1a1a;
+      --bg-card: #ffffff;
+      --text: #1a1a1a;
+      --text-light: #f4f1eb;
+      --accent: #e85d04;
+      --accent-hover: #c94d03;
+      --blue: #0055d4;
+      --border: #d4d0c8;
+      --muted: #6b6b6b;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: 'IBM Plex Sans', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Bebas Neue', sans-serif;
+      font-weight: 400;
+      line-height: 1.1;
+      letter-spacing: 0.02em;
+    }
+
+    a { text-decoration: none; color: inherit; }
+    img { max-width: 100%; display: block; }
+
+    .container {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+
+    /* ===== HEADER ===== */
+    header {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 1000;
+      background: var(--bg-dark);
+      border-bottom: 3px solid var(--accent);
+      padding: 0 24px;
+      transition: box-shadow 0.3s;
+    }
+
+    header.scrolled {
+      box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+    }
+
+    .header-inner {
+      max-width: 1140px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 64px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-icon {
+      width: 36px;
+      height: 36px;
+      flex-shrink: 0;
+    }
+
+    .logo-text {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.5rem;
+      color: var(--text-light);
+      letter-spacing: 0.05em;
+    }
+
+    .logo-text span {
+      color: var(--accent);
+    }
+
+    .btn-whatsapp-header {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: var(--accent);
+      color: #fff;
+      padding: 8px 18px;
+      font-weight: 700;
+      font-size: 0.85rem;
+      border-radius: 4px;
+      transition: background 0.2s, transform 0.2s;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .btn-whatsapp-header:hover {
+      background: var(--accent-hover);
+      transform: translateY(-1px);
+    }
+
+    .btn-whatsapp-header svg {
+      width: 18px;
+      height: 18px;
+      flex-shrink: 0;
+    }
+
+    /* ===== HERO ===== */
+    .hero {
+      padding: 120px 24px 80px;
+      background: var(--bg-dark);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: 
+        repeating-linear-gradient(
+          90deg,
+          transparent,
+          transparent 60px,
+          rgba(232,93,4,0.03) 60px,
+          rgba(232,93,4,0.03) 61px
+        ),
+        repeating-linear-gradient(
+          0deg,
+          transparent,
+          transparent 60px,
+          rgba(232,93,4,0.03) 60px,
+          rgba(232,93,4,0.03) 61px
+        );
+      pointer-events: none;
+    }
+
+    .hero-inner {
+      max-width: 1140px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+      position: relative;
+      z-index: 1;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: rgba(232,93,4,0.15);
+      border: 1px solid rgba(232,93,4,0.3);
+      color: var(--accent);
+      padding: 6px 14px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      border-radius: 3px;
+      margin-bottom: 20px;
+    }
+
+    .hero-badge::before {
+      content: '';
+      width: 8px;
+      height: 8px;
+      background: var(--accent);
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.4; }
+    }
+
+    .hero h1 {
+      font-size: clamp(2.4rem, 5vw, 3.8rem);
+      color: var(--text-light);
+      margin-bottom: 16px;
+    }
+
+    .hero h1 span {
+      color: var(--accent);
+    }
+
+    .hero-sub {
+      font-size: 1.1rem;
+      color: #aaa;
+      margin-bottom: 32px;
+      max-width: 480px;
+      line-height: 1.7;
+    }
+
+    .hero-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      background: var(--accent);
+      color: #fff;
+      padding: 16px 32px;
+      font-weight: 700;
+      font-size: 1rem;
+      border-radius: 4px;
+      transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      box-shadow: 0 4px 20px rgba(232,93,4,0.3);
+    }
+
+    .hero-cta:hover {
+      background: var(--accent-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 30px rgba(232,93,4,0.4);
+    }
+
+    .hero-cta svg {
+      width: 22px;
+      height: 22px;
+    }
+
+    .hero-info {
+      display: flex;
+      gap: 32px;
+      margin-top: 32px;
+      flex-wrap: wrap;
+    }
+
+    .hero-info-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: #888;
+      font-size: 0.85rem;
+    }
+
+    .hero-info-item svg {
+      width: 18px;
+      height: 18px;
+      color: var(--accent);
+      flex-shrink: 0;
+    }
+
+    .hero-visual {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .hero-illustration {
+      width: 100%;
+      max-width: 420px;
+    }
+
+    /* ===== SERVICIOS ===== */
+    .servicios {
+      padding: 80px 24px;
+      background: var(--bg);
+    }
+
+    .section-header {
+      text-align: center;
+      margin-bottom: 56px;
+    }
+
+    .section-tag {
+      display: inline-block;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--accent);
+      margin-bottom: 12px;
+      position: relative;
+      padding: 0 20px;
+    }
+
+    .section-tag::before,
+    .section-tag::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      width: 12px;
+      height: 2px;
+      background: var(--accent);
+    }
+
+    .section-tag::before { left: 0; }
+    .section-tag::after { right: 0; }
+
+    .section-header h2 {
+      font-size: clamp(2rem, 4vw, 2.8rem);
+      color: var(--text);
+    }
+
+    .servicios-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 24px;
+      max-width: 1140px;
+      margin: 0 auto;
+    }
+
+    .servicio-card {
+      background: var(--bg-card);
+      border: 2px solid var(--border);
+      border-radius: 6px;
+      padding: 32px 28px;
+      transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .servicio-card::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 3px;
+      background: var(--accent);
+      transform: scaleX(0);
+      transition: transform 0.3s;
+      transform-origin: left;
+    }
+
+    .servicio-card:hover {
+      border-color: var(--accent);
+      transform: translateY(-4px);
+      box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+    }
+
+    .servicio-card:hover::before {
+      transform: scaleX(1);
+    }
+
+    .servicio-icon {
+      width: 56px;
+      height: 56px;
+      background: rgba(232,93,4,0.08);
+      border-radius: 6px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .servicio-icon svg {
+      width: 30px;
+      height: 30px;
+      color: var(--accent);
+    }
+
+    .servicio-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+      color: var(--text);
+    }
+
+    .servicio-card p {
+      color: var(--muted);
+      font-size: 0.92rem;
+      line-height: 1.7;
+    }
+
+    .servicio-card ul {
+      list-style: none;
+      margin-top: 14px;
+    }
+
+    .servicio-card ul li {
+      font-size: 0.85rem;
+      color: var(--muted);
+      padding: 4px 0;
+      padding-left: 18px;
+      position: relative;
+    }
+
+    .servicio-card ul li::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 11px;
+      width: 8px;
+      height: 2px;
+      background: var(--accent);
+    }
+
+    /* ===== POR QUÉ ELEGIRNOS ===== */
+    .porque {
+      padding: 80px 24px;
+      background: var(--bg-dark);
+      position: relative;
+    }
+
+    .porque .section-header h2 {
+      color: var(--text-light);
+    }
+
+    .porque-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 32px;
+      max-width: 1140px;
+      margin: 0 auto;
+    }
+
+    .porque-item {
+      text-align: left;
+      padding: 28px;
+      border: 1px solid rgba(255,255,255,0.08);
+      border-radius: 6px;
+      transition: border-color 0.3s, background 0.3s;
+    }
+
+    .porque-item:hover {
+      border-color: rgba(232,93,4,0.3);
+      background: rgba(255,255,255,0.02);
+    }
+
+    .porque-icon {
+      width: 48px;
+      height: 48px;
+      margin-bottom: 18px;
+      color: var(--accent);
+    }
+
+    .porque-item h3 {
+      font-size: 1.4rem;
+      color: var(--text-light);
+      margin-bottom: 8px;
+    }
+
+    .porque-item p {
+      color: #999;
+      font-size: 0.9rem;
+      line-height: 1.7;
+    }
+
+    /* ===== GALERÍA VISUAL ===== */
+    .galeria {
+      padding: 80px 24px;
+      background: var(--bg);
+    }
+
+    .galeria-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .galeria-item {
+      background: var(--bg-card);
+      border: 2px solid var(--border);
+      border-radius: 6px;
+      padding: 32px 20px;
+      text-align: center;
+      transition: border-color 0.3s, transform 0.3s;
+    }
+
+    .galeria-item:hover {
+      border-color: var(--accent);
+      transform: translateY(-3px);
+    }
+
+    .galeria-item svg {
+      width: 64px;
+      height: 64px;
+      margin: 0 auto 14px;
+      color: var(--accent);
+    }
+
+    .galeria-item span {
+      font-family: 'Bebas Neue', sans-serif;
+      font-size: 1.1rem;
+      letter-spacing: 0.04em;
+      color: var(--text);
+    }
+
+    /* ===== CTA INTERMEDIO ===== */
+    .cta-mid {
+      padding: 60px 24px;
+      background: var(--accent);
+      text-align: center;
+    }
+
+    .cta-mid h2 {
+      font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+      color: #fff;
+      margin-bottom: 12px;
+    }
+
+    .cta-mid p {
+      color: rgba(255,255,255,0.85);
+      font-size: 1rem;
+      margin-bottom: 28px;
+    }
+
+    .cta-mid-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: var(--bg-dark);
+      color: #fff;
+      padding: 14px 32px;
+      font-weight: 700;
+      font-size: 0.95rem;
+      border-radius: 4px;
+      transition: background 0.2s, transform 0.2s;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+
+    .cta-mid-btn:hover {
+      background: #000;
+      transform: translateY(-2px);
+    }
+
+    .cta-mid-btn svg {
+      width: 20px;
+      height: 20px;
+    }
+
+    /* ===== UBICACIÓN ===== */
+    .ubicacion {
+      padding: 80px 24px;
+      background: var(--bg);
+    }
+
+    .ubicacion-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+      max-width: 1140px;
+      margin: 0 auto;
+      align-items: start;
+    }
+
+    .ubicacion-info {
+      padding: 36px;
+      background: var(--bg-card);
+      border: 2px solid var(--border);
+      border-radius: 6px;
+    }
+
+    .ubicacion-info h3 {
+      font-size: 1.6rem;
+      margin-bottom: 20px;
+      color: var(--text);
+    }
+
+    .info-row {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      padding: 14px 0;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .info-row:last-child {
+      border-bottom: none;
+    }
+
+    .info-row svg {
+      width: 22px;
+      height: 22px;
+      color: var(--accent);
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .info-row-text strong {
+      display: block;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+      margin-bottom: 2px;
+      font-weight: 600;
+    }
+
+    .info-row-text span {
+      font-size: 0.95rem;
+      color: var(--text);
+    }
+
+    .ubicacion-mapa {
+      border-radius: 6px;
+      overflow: hidden;
+      border: 2px solid var(--border);
+      height: 100%;
+      min-height: 380px;
+    }
+
+    .ubicacion-mapa iframe {
+      width: 100%;
+      height: 100%;
+      min-height: 380px;
+      border: none;
+      display: block;
+    }
+
+    /* ===== FOOTER ===== */
+    footer {
+      background: var(--bg-dark);
+      padding: 48px 24px 24px;
+      border-top: 3px solid var(--accent);
+    }
+
+    .footer-inner {
+      max-width: 1140px;
+      margin: 0 auto;
+    }
+
+    .footer-top {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 40px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .footer-brand .logo-text {
+      font-size: 1.8rem;
+      margin-bottom: 12px;
+    }
+
+    .footer-brand p {
+      color: #888;
+      font-size: 0.88rem;
+      line-height: 1.7;
+      max-width: 340px;
+    }
+
+    .footer-col h4 {
+      font-size: 1.1rem;
+      color: var(--text-light);
+      margin-bottom: 16px;
+      letter-spacing: 0.04em;
+    }
+
+    .footer-col p,
+    .footer-col a {
+      color: #888;
+      font-size: 0.88rem;
+      line-height: 2;
+      display: block;
+      transition: color 0.2s;
+    }
+
+    .footer-col a:hover {
+      color: var(--accent);
+    }
+
+    .footer-bottom {
+      padding-top: 24px;
+      text-align: center;
+      color: #555;
+      font-size: 0.8rem;
+    }
+
+    /* ===== BOTÓN FLOTANTE WHATSAPP ===== */
+    .whatsapp-float {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      z-index: 999;
+      width: 60px;
+      height: 60px;
+      background: #25d366;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+      transition: transform 0.3s, box-shadow 0.3s;
+      animation: float-bounce 3s ease-in-out infinite;
+    }
+
+    .whatsapp-float:hover {
+      transform: scale(1.1);
+      box-shadow: 0 6px 30px rgba(37,211,102,0.5);
+      animation: none;
+    }
+
+    .whatsapp-float svg {
+      width: 32px;
+      height: 32px;
+      fill: #fff;
+    }
+
+    @keyframes float-bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
+
+    .whatsapp-float-label {
+      position: fixed;
+      bottom: 32px;
+      right: 92px;
+      z-index: 999;
+      background: var(--bg-dark);
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 4px;
+      font-size: 0.8rem;
+      font-weight: 600;
+      white-space: nowrap;
+      opacity: 0;
+      pointer-events: none;
+      transition: opacity 0.3s;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+
+    .whatsapp-float-label::after {
+      content: '';
+      position: absolute;
+      right: -6px;
+      top: 50%;
+      transform: translateY(-50%);
+      border: 6px solid transparent;
+      border-left-color: var(--bg-dark);
+      border-right: none;
+    }
+
+    .whatsapp-float:hover + .whatsapp-float-label {
+      opacity: 1;
+    }
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width: 900px) {
+      .hero-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        text-align: center;
+      }
+
+      .hero-sub { margin-left: auto; margin-right: auto; }
+      .hero-info { justify-content: center; }
+
+      .hero-visual { order: -1; }
+      .hero-illustration { max-width: 280px; }
+
+      .ubicacion-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-top {
+        grid-template-columns: 1fr;
+        gap: 28px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .header-inner { height: 56px; }
+      .logo-text { font-size: 1.2rem; }
+      .btn-whatsapp-header { padding: 6px 12px; font-size: 0.75rem; }
+      .btn-whatsapp-header .btn-text-full { display: none; }
+      .btn-whatsapp-header .btn-text-short { display: inline; }
+
+      .hero { padding: 100px 20px 60px; }
+      .servicios, .porque, .galeria, .ubicacion { padding: 60px 20px; }
+
+      .hero-cta { width: 100%; justify-content: center; }
+      .whatsapp-float { width: 54px; height: 54px; bottom: 18px; right: 18px; }
+      .whatsapp-float svg { width: 28px; height: 28px; }
+      .whatsapp-float-label { display: none; }
+    }
+
+    @media (min-width: 601px) {
+      .btn-whatsapp-header .btn-text-short { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header id="header">
+    <div class="header-inner">
+      <a href="#" class="logo" aria-label="JGLAVARROPAS - Inicio">
+        <svg class="logo-icon" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <rect x="4" y="2" width="28" height="32" rx="3" stroke="#e85d04" stroke-width="2.5" fill="none"/>
+          <circle cx="18" cy="20" r="8" stroke="#f4f1eb" stroke-width="2" fill="none"/>
+          <circle cx="18" cy="20" r="4" stroke="#e85d04" stroke-width="1.5" fill="none"/>
+          <circle cx="11" cy="8" r="1.5" fill="#e85d04"/>
+          <circle cx="16" cy="8" r="1.5" fill="#f4f1eb"/>
+        </svg>
+        <span class="logo-text">JG<span>LAVARROPAS</span></span>
+      </a>
+      <a href="https://wa.me/542634761946?text=Hola%20JGLAVARROPAS%2C%20quiero%20consultar%20sobre%20una%20reparaci%C3%B3n" class="btn-whatsapp-header" aria-label="Contactar por WhatsApp" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <span class="btn-text-full">Contactar por WhatsApp</span>
+        <span class="btn-text-short">WhatsApp</span>
+      </a>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <div class="hero-badge">Servicio a domicilio — Mendoza</div>
+          <h1>Tu lavarropas y heladera <span>reparados hoy mismo</span></h1>
+          <p class="hero-sub">Servicio técnico especializado a domicilio en Rivadavia, Junín y San Martín. Diagnóstico rápido, repuestos originales y garantía en cada reparación.</p>
+          <a href="https://wa.me/542634761946?text=Hola%20JGLAVARROPAS%2C%20quiero%20consultar%20sobre%20una%20reparaci%C3%B3n" class="hero-cta" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp para consultar sobre una reparación">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Escribinos por WhatsApp
+          </a>
+          <div class="hero-info">
+            <div class="hero-info-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+              <span>Lunes a Domingo, 18 a 23 hs</span>
+            </div>
+            <div class="hero-info-item">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <span>Rivadavia, Junín y San Martín</span>
+            </div>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <svg class="hero-illustration" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg" aria-label="Ilustración de lavarropas y heladera reparados">
+            <!-- Lavarropas -->
+            <rect x="40" y="80" width="150" height="200" rx="8" stroke="#e85d04" stroke-width="3" fill="none"/>
+            <rect x="55" y="95" width="120" height="20" rx="4" stroke="#f4f1eb" stroke-width="1.5" fill="none" opacity="0.3"/>
+            <circle cx="75" cy="105" r="5" fill="#e85d04"/>
+            <circle cx="95" cy="105" r="5" stroke="#f4f1eb" stroke-width="1.5" fill="none" opacity="0.4"/>
+            <circle cx="115" cy="105" r="3" fill="#f4f1eb" opacity="0.3"/>
+            <circle cx="115" cy="190" r="50" stroke="#e85d04" stroke-width="3" fill="none"/>
+            <circle cx="115" cy="190" r="35" stroke="#f4f1eb" stroke-width="1.5" fill="none" opacity="0.2"/>
+            <circle cx="115" cy="190" r="18" stroke="#e85d04" stroke-width="2" fill="none" opacity="0.5"/>
+            <!-- Check mark sobre lavarropas -->
+            <circle cx="170" cy="100" r="18" fill="#25d366"/>
+            <polyline points="160,100 167,108 182,92" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            
+            <!-- Heladera -->
+            <rect x="230" y="50" width="130" height="280" rx="8" stroke="#e85d04" stroke-width="3" fill="none"/>
+            <line x1="230" y1="170" x2="360" y2="170" stroke="#e85d04" stroke-width="2"/>
+            <rect x="340" y="100" width="6" height="30" rx="3" fill="#e85d04" opacity="0.6"/>
+            <rect x="340" y="200" width="6" height="40" rx="3" fill="#e85d04" opacity="0.6"/>
+            <!-- Líneas de frío -->
+            <path d="M260 80 L260 100 M255 85 L265 95" stroke="#0055d4" stroke-width="1.5" opacity="0.4" stroke-linecap="round"/>
+            <path d="M285 75 L285 95 M280 80 L290 90" stroke="#0055d4" stroke-width="1.5" opacity="0.4" stroke-linecap="round"/>
+            <path d="M310 80 L310 100 M305 85 L315 95" stroke="#0055d4" stroke-width="1.5" opacity="0.4" stroke-linecap="round"/>
+            <!-- Check mark sobre heladera -->
+            <circle cx="340" cy="70" r="18" fill="#25d366"/>
+            <polyline points="330,70 337,78 352,62" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+            
+            <!-- Llave inglesa decorativa -->
+            <g transform="translate(160, 320) rotate(-30)">
+              <rect x="0" y="0" width="80" height="10" rx="5" fill="#e85d04" opacity="0.3"/>
+              <circle cx="0" cy="5" r="14" stroke="#e85d04" stroke-width="2.5" fill="none" opacity="0.3"/>
+            </g>
+            
+            <!-- Destornillador decorativo -->
+            <g transform="translate(180, 350) rotate(15)">
+              <rect x="0" y="0" width="60" height="6" rx="3" fill="#f4f1eb" opacity="0.15"/>
+              <rect x="60" y="-3" width="20" height="12" rx="2" fill="#e85d04" opacity="0.2"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="servicios" id="servicios">
+      <div class="section-header">
+        <div class="section-tag">Nuestros servicios</div>
+        <h2>Qué reparamos</h2>
+      </div>
+      <div class="servicios-grid">
+        <div class="servicio-card">
+          <div class="servicio-icon">
+            <svg viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="4" y="2" width="22" height="26" rx="3"/>
+              <circle cx="15" cy="17" r="6"/>
+              <circle cx="15" cy="17" r="3"/>
+              <circle cx="9" cy="6" r="1.2" fill="currentColor"/>
+              <circle cx="13" cy="6" r="1.2" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3>Lavarropas</h3>
+          <p>Reparamos todas las marcas y modelos de lavarropas automáticos y semiautomáticos.</p>
+          <ul>
+            <li>No arranca o no centrifuga</li>
+            <li>Pierde agua o hace ruido</li>
+            <li>No carga ni descarga agua</li>
+            <li>Errores en panel electrónico</li>
+            <li>Cambio de rodamientos y bomba</li>
+          </ul>
+        </div>
+        <div class="servicio-card">
+          <div class="servicio-icon">
+            <svg viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <rect x="5" y="2" width="20" height="26" rx="2"/>
+              <line x1="5" y1="12" x2="25" y2="12"/>
+              <rect x="21" y="6" width="2" height="4" rx="1" fill="currentColor"/>
+              <rect x="21" y="15" width="2" height="5" rx="1" fill="currentColor"/>
+            </svg>
+          </div>
+          <h3>Heladeras</h3>
+          <p>Servicio técnico completo para heladeras domésticas, no frost y exhibidoras.</p>
+          <ul>
+            <li>No enfría o enfría poco</li>
+            <li>Congelamiento excesivo</li>
+            <li>Ruidos extraños o goteo</li>
+            <li>Carga de gas refrigerante</li>
+            <li>Cambio de termostato y motor</li>
+          </ul>
+        </div>
+        <div class="servicio-card">
+          <div class="servicio-icon">
+            <svg viewBox="0 0 30 30" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M15 3 L15 13"/>
+              <circle cx="15" cy="18" r="5"/>
+              <path d="M10 25 L20 25"/>
+              <path d="M8 8 L5 5"/>
+              <path d="M22 8 L25 5"/>
+            </svg>
+          </div>
+          <h3>Diagnóstico a domicilio</h3>
+          <p>Vamos a tu casa, revisamos el electrodoméstico y te damos un presupuesto claro antes de empezar.</p>
+          <ul>
+            <li>Sin costos ocultos</li>
+            <li>Presupuesto antes de reparar</li>
+            <li>Repuestos con garantía</li>
+            <li>Atención de 18 a 23 hs</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- POR QUÉ ELEGIRNOS -->
+    <section class="porque">
+      <div class="section-header">
+        <div class="section-tag">Por qué elegirnos</div>
+        <h2>Trabajo profesional, resultado garantizado</h2>
+      </div>
+      <div class="porque-grid">
+        <div class="porque-item">
+          <svg class="porque-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="24" cy="24" r="20"/>
+            <polyline points="16,24 22,30 34,18"/>
+          </svg>
+          <h3>Especialistas, no generalistas</h3>
+          <p>Nos dedicamos exclusivamente a lavarropas y heladeras. Conocemos cada marca, cada modelo y cada falla de memoria.</p>
+        </div>
+        <div class="porque-item">
+          <svg class="porque-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M24 4 L24 24 L34 30"/>
+            <circle cx="24" cy="24" r="20"/>
+          </svg>
+          <h3>Vamos el mismo día</h3>
+          <p>Coordinamos la visita en el día o a la brevedad. Sabemos que un electrodoméstico roto no puede esperar.</p>
+        </div>
+        <div class="porque-item">
+          <svg class="porque-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M24 4 L6 14 L6 28 C6 36 14 43 24 46 C34 43 42 36 42 28 L42 14 Z"/>
+            <polyline points="16,24 22,30 34,18"/>
+          </svg>
+          <h3>Garantía escrita</h3>
+          <p>Cada reparación tiene garantía por escrito. Si la falla vuelve, volvemos nosotros sin costo adicional.</p>
+        </div>
+        <div class="porque-item">
+          <svg class="porque-icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="6" y="10" width="36" height="28" rx="4"/>
+            <path d="M6 18 L48 18"/>
+            <rect x="12" y="26" width="10" height="4" rx="1" fill="currentColor" opacity="0.3"/>
+          </svg>
+          <h3>Precio justo y claro</h3>
+          <p>Te decimos el precio antes de empezar. Sin sorpresas, sin cargos extras. Presupuesto gratuito por WhatsApp.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERÍA VISUAL -->
+    <section class="galeria">
+      <div class="section-header">
+        <div class="section-tag">Nuestra especialidad</div>
+        <h2>Electrodomésticos que reparamos</h2>
+      </div>
+      <div class="galeria-grid">
+        <div class="galeria-item">
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="10" y="4" width="44" height="56" rx="5"/>
+            <circle cx="32" cy="38" r="14"/>
+            <circle cx="32" cy="38" r="8"/>
+            <circle cx="20" cy="12" r="2.5" fill="currentColor"/>
+            <circle cx="28" cy="12" r="2.5" fill="currentColor"/>
+            <rect x="38" y="10" width="10" height="4" rx="2" fill="currentColor" opacity="0.3"/>
+          </svg>
+          <span>Lavarropas Automáticos</span>
+        </div>
+        <div class="galeria-item">
+          <svg viewBox="0 0 64 64" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="10" y="2" width="44" height="60" rx="4"/>
+            <line x1="10" y1="26" x2="54" y2="26"/>
+            <rect x="46" y="10" width="3" height="10" rx="1.5" fill="currentColor"/>
+            <rect x="46" y="34" width="3" height="12" rx="1.5" fill="currentColor"/>
+            <path d="M22 10 L22 18 M19 12 L25 16" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
+            <path d="M32 8 L32 16 M29 10 L35 14" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
+          </svg>
+          <span>Heladeras No Frost</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA INTERMEDIO -->
+    <section class="cta-mid">
+      <h2>¿Tu electrodoméstico no funciona como debería?</h2>
+      <p>Escribinos por WhatsApp y te respondemos al instante con un turno para hoy.</p>
+      <a href="https://wa.me/542634761946?text=Hola%20JGLAVARROPAS%2C%20quiero%20consultar%20sobre%20una%20reparaci%C3%B3n" class="cta-mid-btn" target="_blank" rel="noopener" aria-label="Consultar presupuesto por WhatsApp">
+        <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Consultar ahora
+      </a>
+    </section>
+
+    <!-- UBICACIÓN Y HORARIOS -->
+    <section class="ubicacion" id="ubicacion">
+      <div class="section-header">
+        <div class="section-tag">Zona de cobertura</div>
+        <h2>Dónde trabajamos</h2>
+      </div>
+      <div class="ubicacion-grid">
+        <div class="ubicacion-info">
+          <h3>Información de contacto</h3>
+          <div class="info-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div class="info-row-text">
+              <strong>Zona de servicio</strong>
+              <span>Rivadavia, Junín y San Martín — Mendoza, Argentina</span>
+            </div>
+          </div>
+          <div class="info-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            <div class="info-row-text">
+              <strong>WhatsApp</strong>
+              <span><a href="https://wa.me/542634761946?text=Hola%20JGLAVARROPAS%2C%20quiero%20consultar%20sobre%20una%20reparaci%C3%B3n" target="_blank" rel="noopener" style="color:var(--accent);font-weight:600;">+54 263 476-1946</a></span>
+            </div>
+          </div>
+          <div class="info-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <div class="info-row-text">
+              <strong>Horario de atención</strong>
+              <span>Todos los días de 18:00 a 23:00 hs</span>
+            </div>
+          </div>
+          <div class="info-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M2 10h20"/><path d="M6 4v4"/><path d="M18 4v4"/></svg>
+            <div class="info-row-text">
+              <strong>Modalidad</strong>
+              <span>Servicio técnico a domicilio — vamos a tu casa</span>
+            </div>
+          </div>
+        </div>
+        <div class="ubicacion-mapa">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d106845.63736853437!2d-68.55!3d-33.15!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1700000000000!5m2!1ses-419!2sar" 
+            width="100%" 
+            height="100%" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade"
+            title="Mapa de zona de cobertura — Rivadavia, Junín y San Martín, Mendoza">
+          </iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <div class="logo-text">JG<span style="color:var(--accent);">LAVARROPAS</span></div>
+          <p>Servicio técnico especializado en reparación de lavarropas y heladeras a domicilio en Rivadavia, Junín y San Martín, Mendoza.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Contacto</h4>
+          <a href="https://wa.me/542634761946?text=Hola%20JGLAVARROPAS%2C%20quiero%20consultar%20sobre%20una%20reparaci%C3%B3n" target="_blank" rel="noopener">+54 263 476-1946</a>
+          <p>Rivadavia, Junín y San Martín</p>
+          <p>Mendoza, Argentina</p>
+        </div>
+        <div class="footer-col">
+          <h4>Horarios</h4>
+          <p>Lunes a Domingo</p>
+          <p>18:00 a 23:00 hs</p>
+          <p style="margin-top:12px;"><a href="https://wa.me/542634761946?text=Hola%20JGLAVARROPAS%2C%20quiero%20consultar%20sobre%20una%20reparaci%C3%B3n" target="_blank" rel="noopener" style="color:var(--accent);font-weight:600;">Escribinos por WhatsApp →</a></p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© <span id="year"></span> JGLAVARROPAS — Servicio técnico de lavarropas y heladeras en Mendoza. Todos los derechos reservados.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- BOTÓN FLOTANTE WHATSAPP -->
+  <a href="https://wa.me/542634761946?text=Hola%20JGLAVARROPAS%2C%20quiero%20consultar%20sobre%20una%20reparaci%C3%B3n" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Contactar por WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
+  <div class="whatsapp-float-label">¿Necesitás una reparación?</div>
+
+  <script>
+    // Header scroll effect
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 40) {
+        header.classList.add('scrolled');
+      } else {
+        header.classList.remove('scrolled');
+      }
+    });
+
+    // Año actual en footer
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
