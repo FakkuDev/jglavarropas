@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="JGLAVARROPAS favicon">
+  <rect width="64" height="64" rx="14" fill="#1a1a1a"/>
+  <rect x="4" y="4" width="56" height="56" rx="10" fill="none" stroke="#e85d04" stroke-width="2.5"/>
+  <circle cx="19" cy="22" r="5" fill="#e85d04" opacity="0.9"/>
+  <circle cx="31" cy="22" r="5" fill="#f4f1eb" opacity="0.9"/>
+  <circle cx="43" cy="22" r="5" fill="#e85d04" opacity="0.9"/>
+  <path d="M18 39c4-5 9-8 14-8s10 3 14 8" fill="none" stroke="#f4f1eb" stroke-width="3" stroke-linecap="round"/>
+  <path d="M15 46h34" stroke="#e85d04" stroke-width="3" stroke-linecap="round"/>
+</svg>
